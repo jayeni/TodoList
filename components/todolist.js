@@ -48,8 +48,8 @@ class Todolist  extends React.Component {
             });
         }
      handleDelete(Deleteid){
-        console.log(Deleteid);
-        console.log(this.state.n);
+        console.log("Delete");
+        
       firebase.database().ref(this.state.n).child(Deleteid).remove()
        let Tnotes  = this.state.notes;
        Tnotes = Tnotes.filter(c => c.id !== Deleteid)
@@ -129,7 +129,7 @@ class Todolist  extends React.Component {
      }
      handleUpdate(temp){
        
-        console.log(temp);
+        console.log("update");
          this.setState({
             updateval: temp.value,
             editId: temp.id,
@@ -291,7 +291,7 @@ class Todolist  extends React.Component {
                               </Container>;
     
         
-        return ( <Container style={{flex:1}}>
+        return ( <Container >
     
          
          
@@ -309,16 +309,17 @@ class Todolist  extends React.Component {
 const styles = StyleSheet.create({
     container: {
        
-        marginBottom:100
+       
     },
     welcome: {
         alignItems: 'center',
  
     },  bottomView:{
-        flex:.2,
+
       
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
+        marginBottom:50
       },
     addbutton: {
         alignSelf: 'flex-end', 
@@ -326,7 +327,7 @@ const styles = StyleSheet.create({
         elevation: 4, 
         height: 70, 
         width: 70, 
-        bottom: 0, 
+        bottom: 40, 
         borderWidth: 1,
        borderRadius: 35,
         color: '#00bfff', 

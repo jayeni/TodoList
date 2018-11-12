@@ -38,7 +38,7 @@ export default class App extends Component{
   componentDidMount(){
     firebase.auth().onAuthStateChanged((user)=>{
       if(user != null){
-        console.log(user)
+      
         this.setState({
             login: false,
             userid:  firebase.auth().currentUser.uid.toString(),
