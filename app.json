@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "TodoList",
-    "description": "This project is really great.",
+    "description": "features:\n-swipe to delete or update text\n-press the + button to add text\n",
     "slug": "TodoList",
     "privacy": "public",
     "sdkVersion": "31.0.0",
