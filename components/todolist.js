@@ -267,7 +267,7 @@ class Todolist  extends React.Component {
                              
                        
                      </Container>;
-         var readTask= <Container>
+         var readTask= <Container style={{flex:1}}>
               <Header>
           <Left>
             <Button transparent  onPress= {()=>this.handleCancel()}>
