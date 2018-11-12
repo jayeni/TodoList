@@ -22,11 +22,11 @@ constructor(props){
           onPress: ()=>this.props.onUpdate({id: this.props.id,value:this.props.value}),
           text:'Update',
           type:'primary'
-      },{
+          }/*,{
         onPress : ()=>this.props.onRead({id: this.props.id,value:this.props.value}),
         text:'View',
         type:'secondary'
-    }
+    }*/
       ]
      
       
@@ -34,7 +34,7 @@ constructor(props){
             <Content style={styles.container}>
             
  <Swipeout right={trash} backgroundColor = {"#ffffff"} >
-                 <Text  style={styles.welcome}>
+                 <Text  onPress={()=>this.props.onRead({id: this.props.id,value:this.props.value})}  style={styles.welcome}>
                {this.props.value}
              
                </Text>
