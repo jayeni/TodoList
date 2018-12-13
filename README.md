@@ -1,5 +1,6 @@
 # TodoList
 <b>Project Description:</b> an app where you can keep track of your Todolist. App can be viewed on  https://expo.io/@jayeni/TodoList
+
 <b>Features:</b><br>
 * Facebook SDK is used to login into app<br>
 * Firebase is used to save user todolist and is link to corresponding facebook account<br>
